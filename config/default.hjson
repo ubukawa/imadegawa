@@ -1,6 +1,6 @@
 {
  morganFormat: tiny
- htdocsPath: htdocs
+ htdocsPath: docs
  privkeyPath: ./key/privkey.pem 
  fullchainPath: ./key/cert.pem
  logDirPath: log
