@@ -25,3 +25,10 @@
 {"level":"info","message":"GET /font/sans/0-255.pbf 200 76580 - 2.882 ms"}
 {"level":"info","message":"GET /font/sans/256-511.pbf 200 127219 - 1.251 ms"}
 {"level":"info","message":"GET /font/sans/512-767.pbf 200 95728 - 0.920 ms"}
+{"level":"info","message":"GET / 200 985 - 16.265 ms"}
+{"level":"info","message":"GET / 200 1081 - 11.022 ms"}
+{"level":"info","message":"GET / 304 - - 3.766 ms"}
+{"level":"info","message":"GET /esri-IF/VectorTileServer 301 215 - 3.730 ms"}
+{"level":"info","message":"GET /esri-IF/VectorTileServer/ 404 164 - 3.584 ms"}
+{"level":"info","message":"GET /esri-IF/VectorTileServer/ 404 164 - 1.312 ms"}
+{"level":"info","message":"GET /esri-IF/VectorTileServer/index.json 200 2244 - 3.701 ms"}

@@ -1,13 +1,13 @@
 {
   "version": 8,
-  "name": "style4pbf",
+  "name": "Test with NaturalEarth",
   "sources": {
     "ne-test": {
       "type": "vector",
-      "tiles": ["http://localhost:8836/pbf_tile/ne-test/{z}/{x}/{y}.pbf"],
+      "url": "http://localhost:8836/esri-IF/VectorTileServer",
       "attribution": "Source is from NaturalEarth. The boundaries and names shown and the designations used on this map do not imply any endorsement or acceptance by any orgnizations.​",
-      "minzoom": 0,
-      "maxzoom": 5
+      "minZoom": 0,
+      "maxZoom": 5
     }
   },
   "sprite": "http://localhost:8836/sprite/sprite",
