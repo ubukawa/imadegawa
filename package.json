@@ -1,0 +1,29 @@
+{
+  "name": "imadegawa",
+  "version": "1.0.0",
+  "description": "a simple server test 01",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ubukawa/imadegawa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "https://github.com/ubukawa/imadegawa#LICENSE",
+  "bugs": {
+    "url": "https://github.com/ubukawa/imadegawa/issues"
+  },
+  "homepage": "https://github.com/ubukawa/imadegawa#readme",
+  "dependencies": {
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "hjson": "^3.2.2",
+    "morgan": "^1.10.0",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.5"
+  }
+}
