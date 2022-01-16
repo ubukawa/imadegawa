@@ -41,7 +41,7 @@ app.use(express.static(htdocsPath))
 
 
 //Added
-const esriRouter = router.get(`/:t/VectorTileServer/`, 
+const esriIndexRouter = router.get(`/:t/VectorTileServer/`, 
  async function(req, res) {
   const t = req.params.t
   var indexjsonPath = `./esri-IF/${t}/VectorTileServer/index.json`
@@ -53,7 +53,21 @@ const esriRouter = router.get(`/:t/VectorTileServer/`,
  }
 )
 
-app.use('/esri-IF', esriRouter)
+const esriStyleRouter = router.get(`/:t/VectorTileServer/resources/styles`, 
+ async function(req, res) {
+  const t = req.params.t
+  var stylejsonPath = `./esri-IF/${t}/VectorTileServer/resources/styles/root.json`
+  if(fs.existsSync( stylejsonPath )){
+    res.sendFile('root.json', { root: `./esri-IF/${t}/VectorTileServer/resources/styles` })
+  }else{
+    res.status(404).send(`root.json not found: esri-IF/${t}/VectorTileServer/resources/styles`)
+  }
+ }
+)
+
+app.use('/esri-IF', esriIndexRouter)
+app.use('/esri-IF', esriStyleRouter)
+app.use('/esri-IF', express.static('esri-IF'))
 
 //for http
 app.listen(port, () => {
