@@ -19,4 +19,6 @@ Ctrl+c to stop server.
 http://localhost:8836/
 
 Or, because this repository uses GitHub pages, you can access it from:
-https://ubukawa.github.io/imadegawa/
+https://ubukawa.github.io/imadegawa/docs/maps/maps-mapbox.html (edit tile path in style.json)
+https://ubukawa.github.io/imadegawa/docs/maps/maps-mapblibre.html (edit tile path in style.json)
+https://ubukawa.github.io/imadegawa/esri-IF/test1/VectorTileServer
